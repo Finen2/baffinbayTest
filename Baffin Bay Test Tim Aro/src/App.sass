@@ -1,0 +1,36 @@
+@import './sass/Import.sass'
+
+.container
+  background-color: $background-light-color
+  width: 100%
+  height: 100vh
+
+  +element('infonBox')
+    width: 80%
+    background-color: $background-white-color
+    color: $text-dark-color
+    margin: 1em
+    padding: 1em
+    box-shadow: 5px 10px $light-neutral-color
+    border-radius: 5px
+    &:hover
+      box-shadow: 5px 10px $main-color
+
+  +element('headerText')
+    text-decoration: underline
+    color: $main-color
+    font-weight: bold
+
+.item
+  padding-top: 1em
+  padding-bottom: 1em
+  border-bottom: 2px solid $light-neutral-color
+  min-height: 2em
+  width: 100%
+  &:hover
+    border-bottom: 2px solid $main-color
+    background-color: $background-light-color
+
+  +element('text')
+    width: calc(100% / 4)
+    padding-left: 1em
